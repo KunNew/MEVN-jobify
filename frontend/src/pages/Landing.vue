@@ -1,6 +1,7 @@
 <script setup>
 import Wrapper from "../assets/wrappers/LandingPage";
-import main from "../assets/images/main.svg";
+// import main from "../assets/images/main.svg";
+import main from '../assets/images/main1.svg'
 import Logo from "../components/Logo.vue";
 
 import axios from 'axios'

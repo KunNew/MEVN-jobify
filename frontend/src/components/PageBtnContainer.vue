@@ -32,16 +32,16 @@ onMounted(() => {});
   <Wrapper>
     <button class="prev-btn" @click="prevPage()">prev</button>
     <div v-for="pageNumber in pages" :key="pageNumber" class="btn-container">
-        <button
-          type="button"
-          @click="jobStore.changePage(pageNumber)"
-          :class="`${
-            pageNumber === jobStore._page ? 'pageBtn active' : 'pageBtn'
-          }`"
-        >
-          {{ pageNumber }}
-        </button>
-      </div>
+      <button
+        type="button"
+        @click="jobStore.changePage(pageNumber)"
+        :class="`${
+          pageNumber === jobStore._page ? 'pageBtn active' : 'pageBtn'
+        }`"
+      >
+        {{ pageNumber }}
+      </button>
+    </div>
     <button class="next-btn" @click="nextPage()">next</button>
   </Wrapper>
 </template>

@@ -66,7 +66,7 @@ router.beforeEach((to, from, next) => {
   const store = useMainStore();
 
   if (to.meta.requiresAuth && !store._user)
-    next({ path: "/register", query: { redirect: to.fullPath } });
+    next({ path: "/landing", query: { redirect: to.fullPath } });
   else if (!to.meta.requiresAuth && store._user) next({ path: "/" });
 
   next();
